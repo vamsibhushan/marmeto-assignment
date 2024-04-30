@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
+.mainTitle {
+    text-align: center;
+    font-family: Roboto;
+}
+
+.PageDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-top: 25px;
+}
+
+.genders {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* button elements */
+.btn {
+    border: none;
+    width: 200px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.activeBtn {
+    background-color: black;
+    color: white;
+}
+
+.imgDiv {
+    position: relative;
+}
+
+.imgEl {
+    width: 200px;
+    height: 280px;
+
+}
+
+.textImg {
+    position: absolute;
+    bottom: 80%;
+    background-color: #dedbd9;
+    color: black;
+    padding: 12px;
+    margin-left: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+
+.mainTitleDiv {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.item{
+    margin-right:10px;
+}
+
+@media screen and (max-width: 576px) {
+    .PageDiv {
+        justify-content: center;
+        margin-right: 20px;
+    }
+
+    .btn {
+        width: 100px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width: 767px) {
+    .PageDiv {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .genders {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .btn {
+        width: 100px;
+    }
+}
+
+
+
+
+/* product title */
+.main-title {
+    white-space: nowrap;
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+.price-div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: "Roboto";
+}
+
+.price {
+    font-weight: bold;
+}
+
+.cutOff {
+    text-decoration: line-through;
+}
+
+.buy-cart-btn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cart-Btn {
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
